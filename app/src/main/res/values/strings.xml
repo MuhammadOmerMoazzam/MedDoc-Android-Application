@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MedDoc</string>
+    <string name="create_account">Create Account</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="or_sign_up_with">Or sign up with</string>
+    <string name="create_an_account_by_using_the_form_below">Create an account by using the form below.</string>
+    <string name="email">Email</string>
+    <string name="get_started">Get Started</string>
+    <string name="password">Password</string>
+    <string name="logoLayout">Logo Layout</string>
+    <string name="logoImageView">App logo</string>
+    <string name="fill_out_the_information_below_in_order_to_access_your_account">Fill out the information below in order to access your account.</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="or_sign_in_with">Or sign in with</string>
+    <string name="don_t_have_an_account_create_account">Get Started!</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="send_reset_link">Send Reset Link</string>
+    <string name="forgot_password_description">Please fill out your email below in order to receive a reset password link.</string>
+    <string name="back_button">Go back to login page from forgot password page</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_appointments">Appointments</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_records">Records</string>
+</resources>
