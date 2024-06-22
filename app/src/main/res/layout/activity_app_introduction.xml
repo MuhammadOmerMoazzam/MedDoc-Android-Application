@@ -7,34 +7,30 @@
     android:layout_height="match_parent"
     tools:context=".AppIntroduction">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="308dp"
-        android:layout_height="456dp"
-        android:layout_marginTop="104dp"
-        android:contentDescription="@string/app_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/medicine" />
-
     <TextView
         android:id="@+id/appName"
-        android:layout_width="257dp"
-        android:layout_height="40dp"
+        android:layout_width="210dp"
+        android:layout_height="42dp"
         android:layout_marginBottom="16dp"
         android:drawablePadding="10dp"
         android:text="@string/app_name"
         android:textColor="@color/info"
-        android:textSize="28sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:drawableLeftCompat="@drawable/ic_launcher_foreground"
         app:drawableTint="@color/info"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="1.0"
         tools:ignore="TextSizeCheck" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="285dp"
+        android:layout_height="392dp"
+        app:layout_constraintBottom_toTopOf="@+id/appName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.343" />
 </androidx.constraintlayout.widget.ConstraintLayout>
