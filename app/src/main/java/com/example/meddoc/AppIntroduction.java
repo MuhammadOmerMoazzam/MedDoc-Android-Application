@@ -1,9 +1,11 @@
 package com.example.meddoc;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.widget.VideoView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -34,5 +36,15 @@ public class AppIntroduction extends AppCompatActivity {
             finish();
         }, 3000); // 3000 milliseconds delay
 
+
+        // Initialize VideoView
+        VideoView videoView = findViewById(R.id.videoView);
+
+        // Set video URI
+        Uri videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.meddoc_app_introduction);
+        videoView.setVideoURI(videoUri);
+
+        // Start the video
+        videoView.start();
     }
 }
