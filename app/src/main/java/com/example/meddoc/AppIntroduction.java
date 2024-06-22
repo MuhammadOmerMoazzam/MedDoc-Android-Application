@@ -26,15 +26,13 @@ public class AppIntroduction extends AppCompatActivity {
         });
 
         // Delay of 3 seconds (3000 milliseconds)
-        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                // Start MainActivity
-                Intent intent = new Intent(AppIntroduction.this, MainActivity.class);
-                startActivity(intent);
-                // Finish the current activity
-                finish();
-            }
+        new Handler(Looper.getMainLooper()).postDelayed(() -> {
+            // Start MainActivity
+            Intent intent = new Intent(AppIntroduction.this, MainActivity.class);
+            startActivity(intent);
+            // Finish the current activity
+            finish();
         }, 3000); // 3000 milliseconds delay
+
     }
 }
